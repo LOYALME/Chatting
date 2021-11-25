@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileShow"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:src="@drawable/image_2"
+        android:layout_width="293dp"
+        android:layout_height="324dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/imgview"
+        android:layout_marginTop="5dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="258dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/view"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="258dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_nickname"
+        android:layout_centerInParent="true" />
+
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="-1dp"
+        android:text="닫기" />
+
+</RelativeLayout>
